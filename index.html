@@ -1,1 +1,116 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+    body {
+        margin: 0;
+        font-family: 'Courier New', monospace;
+        color: white;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        cursor: crosshair;
+        box-shadow: 0 0 10px cyan, 0 0 20px blue;
+        text-shadow: 0 0 10px cyan;
+         background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364);
+         background-size: 400% 400%;
+         animation: moveBg 10s infinite alternate;
+        }
+        @keyframes moveBg {
+            0% {background-position: left;}
+            100% {background-position: right;}
+        }
+    
+
+    header, footer {
+        background: black;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav a {
+        color: cyan;
+        margin: 10px;
+        text-decoration: none;
+    }
+
+    h1 {
+        text-shadow: 0 0 10px cyan;
+    }
+    section {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid cyan;
+     transition: 0.3s;
+    }
+     .profile {
+    width: 160px;
+    border-radius: 20px;
+    border: 2px solid cyan;
+    box-shadow: 0 0 20px cyan, inset 0 0 10px blue;
+    display: block;
+    margin: 20px auto;
+    }
+    .project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px cyan;
+    }
+    html {
+    scroll-behavior: smooth;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <a href="index1.html">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>About me</h2>
+    <img src="c:\Users\harin\Downloads\IMG_20230407_224002112.jpg" alt="My Photo" width="150" class="profile">
+    <p>I'm a Computer Science & Engineering student at Amrita Vishwa Vidyapeetham with a deep passion for crafting interfaces that are both technically robust and visually compelling.
+
+My focus is User Interface Design — studying human-computer interaction and translating that understanding into experiences that feel natural and powerful. I approach every project with engineering rigour and an eye for detail.
+
+Off-screen: wireframe sketching, open-source contributions, and studying design systems at scale. I believe the best engineers think in both systems and pixels.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Project 1</h3>
+        <p>Simple audrino pill dispenser with time intervals</p>
+        
+    </div>
+
+    <div class="project">
+        <h3>Project 2</h3>
+        <p>Python project to create a blood bank with the help of MySQL</p>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: nandagopan.harinarayan@gmail.com</p>
+    <p>Phone: 9539371155</p>
+    <p>linkedin:linkedin.com/in/Harinarayan N</p>
+    <p>github: github.com/Avfubuu</p>
+</section>
+
+<footer>
+    <p>© Harinarayan N</p>
+</footer>
+
+</body>
+</html>
